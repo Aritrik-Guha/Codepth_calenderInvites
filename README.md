@@ -1,10 +1,3 @@
-##################################################
-## Author: {Sayantan Biswas}
-## Maintainer: {Sayantan Biswa}
-## Email: {sayantanbiswas1002@gmail.com}
-##################################################
-
-
 # Flask Calendar Task with Login Application
 
 The `app.py`
