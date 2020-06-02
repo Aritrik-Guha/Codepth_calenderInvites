@@ -178,7 +178,7 @@ def adduser(app, username, password):
 
 # [--- Entry point ---]
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     house()
     app.run(debug=True)
 
