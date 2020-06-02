@@ -172,13 +172,13 @@ def adduser(app, username, password):
 
 
 
-@main.command()
+#@main.command()
 
    
 
 # [--- Entry point ---]
 
 if __name__ == "__main__":
-    #main()
+    house()
     app.run(debug=True)
 
