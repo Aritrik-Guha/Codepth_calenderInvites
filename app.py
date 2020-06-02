@@ -107,13 +107,13 @@ def configure_views(app):
             return render_template('add_event.html')
 
     @app.route('/api', methods=['POST'])
-    @login_required(basic=True)
+    #@login_required(basic=True)
     def api():
         return jsonify(data='You are logged in with basic auth')
 
-    @login_required(basic=True)
+    #@login_required(basic=True)
     @app.route('/history')
-    @login_required(username=['admin'])
+    #@login_required(username=['admin'])
     def history():
         # user = load_users()
         if os.path.exists('records.sqlite'):
