@@ -172,7 +172,7 @@ def adduser(app, username, password):
 
 
 
-#@main.command()
+@main.command()
 
    
 
