@@ -180,6 +180,5 @@ def adduser(app, username, password):
 
 if __name__ == "__main__":
     #main()
-    app.debug=True
-    app.run()
+    app.run(debug=True)
 

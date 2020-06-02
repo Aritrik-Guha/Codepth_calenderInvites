@@ -156,7 +156,7 @@ def with_app(f):
 
 
 @click.group()
-def main():
+def house():
     """Flask Calendar Task Scheduling App"""
     home()
 
@@ -173,8 +173,7 @@ def adduser(app, username, password):
 
 
 @main.command()
-def getApp:
-    return app
+
    
 
 # [--- Entry point ---]
