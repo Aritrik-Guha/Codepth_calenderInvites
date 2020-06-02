@@ -173,18 +173,6 @@ def adduser(app, username, password):
 
 
 @main.command()
-#@click.option('--reloader/--no-reloader', default=None)
-#@click.option('--debug/--no-debug', default=True)
-#@click.option('--host', default=None)
-#@click.option('--port', default=None)
-@with_app
-#def main(app=None, reloader=None, debug=None, host=None, port=None):
-#    """Run the Flask development server i.e. app.run()"""
-    #debug = debug or app.config.get('DEBUG', False)
-    #reloader = reloader or app.config.get('RELOADER', True)
-    #host = host or app.config.get('HOST', '127.0.0.1')
-port =  process.env.PORT or app.config.get('PORT', 5000)
-
 def getApp:
     return app
    
@@ -193,9 +181,6 @@ def getApp:
 
 if __name__ == "__main__":
     #main()
-    app.run(
-        debug=True,
-        host='127.0.0.1',
-        port=port
-    )
+    app.debug=True
+    app.run()
 
